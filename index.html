@@ -1,105 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- This is an A11y Change-->
+<html lang="te">   
 <head>
     <meta charset="UTF-8">
+    <!-- This is an SEO Change (added meta)-->
+    <meta name="description" content="A personal-budget management tool that helps to manage your companies budget effectively">
+    <meta name="keywords" content="Budgment Management,Personal Budgement Management,financial Management">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Budget</title>
     <link rel="stylesheet" href="/reset.css">
     <link rel="stylesheet" href="/main.css">
+    <link rel="canonical" href="http://127.0.0.1:5500/pb" />
 </head>
 <body>
-
-    <div class="menu">
+    <!-- This is an A11y Change (used ARIA Roles-(ARIA is a set of standards to make user interface controls more accessible for those using assistive technologies.))-->
+    <div class="menu"
+        role="Navigation">
         <ul>
             <li><a href="/">Homepage</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/login.html">Login</a></li>
+            <li><a href="/pb/about.html">About</a></li>
+            <li><a href="/pb/login.html">Login</a></li>
             <li><a href="https://google.com">Google</a></li>
+            <li class="bar">
+                <!-- This is an A11y Change (used ARIA Roles)-->
+                <div id="percent-loaded"
+                role="progressbar"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100">
+                <label for="Personal-Budget Management">Your progress:</label>
+                <progress id="file" value="32" max="100"> 32% </progress>
+            </div></li>
         </ul>
+        <!-- This is an SEO Change(added alt tag for a image so if browser fails to load the image it will display the text in alt tag defining the image) -->
+        <img src="app-logo.png" width="60px" height="45px" id=logo alt="Logo image" style="margin-left: auto;" />
     </div>
 
+    <!-- This is a Semantic HTML Change (added header semantic)-->
+    <header>
     <div class="hero">
         <h1>Personal Budget</h1>
         <h2>A personal-budget management app</h2>
+        <h2>వ్యక్తిగత-బడ్జెట్ నిర్వహణ</h2>
     </div>
+    </header>
 
     <div class="container center">
-
-        <div class="page-area">
+        <!-- This is an A11y Change(Gave proper naming for a class)-->
+        <div class="Benefits-of-using-our-tool">
 
             <div class="text-box">
-                <h1>Stay on track</h1>
+                <!-- This is a Semantic HTML Change (added section semantic )-->
+                <section>
+                <!-- This is an A11y Change (changed all h1 tags to h2 to maintain only one h1 tag in the page)-->
+                <h2>Stay on track</h2>
                 <p>
                     Do you know where you are spending your money? If you really stop to track it down,
                     you would get surprised! Proper budget management depends on real data... and this
                     app will help you with that!
                 </p>
+                </section>
             </div>
     
             <div class="text-box">
-                <h1>Alerts</h1>
+                <section>
+                <h2>Alerts</h2>
                 <p>
                     What if your clothing budget ended? You will get an alert. The goal is to never go over the budget.
                 </p>
+                </section>
             </div>
     
             <div class="text-box">
-                <h1>Results</h1>
+                <section>
+                <h2>Results</h2>
                 <p>
                     People who stick to a financial plan, budgeting every expense, get out of debt faster!
                     Also, they to live happier lives... since they expend without guilt or fear... 
                     because they know it is all good and accounted for.
                 </p>
+                </section>
             </div>
     
             <div class="text-box">
-                <h1>Free</h1>
+                <section>
+                <h2>Free</h2>
                 <p>
                     This app is free!!! And you are the only one holding your data!
                 </p>
+                </section>
             </div>
     
             <div class="text-box">
-                <h1>Stay on track</h1>
+            <section>
+                <h2>Stay on track</h2>
                 <p>
                     Do you know where you are spending your money? If you really stop to track it down,
                     you would get surprised! Proper budget management depends on real data... and this
                     app will help you with that!
                 </p>
+            </section>
             </div>
     
             <div class="text-box">
-                <h1>Alerts</h1>
+            <section>
+                <h2>Alerts</h2>
                 <p>
                     What if your clothing budget ended? You will get an alert. The goal is to never go over the budget.
                 </p>
+            </section>
             </div>
     
             <div class="text-box">
-                <h1>Results</h1>
+                <section>
+                <h2>Results</h2>
                 <p>
                     People who stick to a financial plan, budgeting every expense, get out of debt faster!
                     Also, they to live happier lives... since they expend without guilt or fear... 
                     because they know it is all good and accounted for.
                 </p>
+            </section>
             </div>
     
             <div class="text-box">
-                <h1>Free</h1>
+            <section>
+                <h2>Free</h2>
                 <p>
                     This app is free!!! And you are the only one holding your data!
                 </p>
+            </section>
             </div>
 
         </div>
 
     </div>
 
-    <div class="bottom">
+    <!-- This is a Semantic HTML Change (added footer semantic )-->
+    <footer class="bottom">
+   
         <div class="center">
-            All rights reserved &copy; Fabio Nolasco
+            <p>Edited by Gurunath Reddy</p>
+            <p><a href="mailto:hege@example.com">gdyvandi@uncc.edu</a></p>
+            <!-- This is an SEO Change(added proper anchor tag)-->
+            <p><a href="https://consumer.gov/managing-your-money/making-budget">More Info on Personal Budget Management</a></p>
         </div>
-    </div>
+    
+    </footer>
+    
 
 </body>
 </html>

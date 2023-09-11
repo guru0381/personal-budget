@@ -8,6 +8,8 @@ body {
 }
 
 div.menu {
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
     background-color: #4d5791;
     height: 44px;
@@ -68,19 +70,31 @@ div.hero h2 {
     width: 100%;
 }
 
-.page-area {
+.Benefits-of-using-our-tool {
     max-width: 768px;
     display: inline-block;
 }
 
 .bottom {
-    height: 50px;
+    height: 60px;
     background-color: #b4c6f0;
-    padding: 40px;
+    padding: 0px;
+    
 }
 
 .center {
     text-align: center;
+}
+
+.progressbar{
+    font-size: 1.4em;
+    text-decoration: none;
+    color: #fff;
+}
+.bar{
+    font-size: 1.4em;
+    text-decoration: none;
+    color: #fff;
 }
 
 .container div.text-box {
